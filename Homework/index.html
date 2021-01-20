@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head>  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    
     <title>CV</title>
   </head>
   <body>
-    <h1><center>Curriculum vitae-CV</center></h1>
+    <div class="container">
+    <h1>Curriculum vitae-CV</h1>
+    <hr>
     <header>
+      <div class="navigation-list">
       <ul>
         <li><a href="#info">Informata personale</a></li>
         <li><a href="#education-training">Edukimi dhe trajnimet</a></li>
         <li><a href="#skills">Aftesi tjera</a></li>
         <li><a href="#contact">Kontakti</a></li>
       </ul>
+    </div>
     </header>
     <section id="info">
+      <hr>
+      <div class="info">
       <h2>
         Informata personale
-        <hr />
       </h2>
-      <img
-        src="https://cdn.onlinewebfonts.com/svg/img_87237.png"
+    </div>
+    <hr /> 
+    <div class="personal-info">
+      <img 
+        src="images/profile.jpg"
         alt="Profili"
         width="150px"
-        height="150px"
+        height="170px"
       />
       <p>Egzon Bllaca</p>
       <p>Adresa: Gjilan,Kosove</p>
@@ -31,22 +43,30 @@
         <a href="mailto:egzonbllaca88@gmail.com">egzonbllaca88@gmail.com</a>
       </p>
       <p>Nr. tel: 045 123456</p>
+    </div>
+    
     </section>
     <br />
     <section id="education-training">
-      <h3>
+      <hr />
+      <div class="education">
+        
+      <h2>
         Edukimi dhe trajnimet
-        <hr />
-      </h3>
-      <table>
-        <h3>Edukimi</h3>
-        <tr>
+       
+      </h2>
+    </div>
+      <hr />
+      <h3>Edukimi</h3>
+      <div >
+      <table class="tabela-edukimi">
+        <tr class="rreshti">
           <th>Data</th>
           <th>Institucioni</th>
           <th>Drejtimi</th>
         </tr>
 
-        <tr>
+        <tr class="rreshti">
           <td>2017-2020</td>
           <td>Xhavit Ahmeti</td>
           <td>Gjimnazi i shkencave natyrore</td>
@@ -57,17 +77,18 @@
           <td>Programimi me paisje mobile dhe cloud</td>
         </tr>
       </table>
+    </div>
       <br />
       <br />
 
-      <table>
-        <h3>Trajnimet</h3>
-        <tr>
+      <h3>Trajnimet</h3>
+      <table class="tabela-trajnimi">
+        <tr class="rreshti">
           <th>Data</th>
           <th>Institucioni</th>
           <th>Drejtimi</th>
         </tr>
-        <tr>
+        <tr class="rreshti">
           <td>Gusht 2020</td>
           <td>
             <a href="https://opendatakosovo.org/" target="_blank">
@@ -90,13 +111,16 @@
     <br />
     <br />
     <section id="skills">
-      <h3>
+      <hr />
+      <div class="aftesite">
+      <h2>
         Aftesite tjera
-        <hr />
-      </h3>
+      </h2>
+    </div>
+      <hr />
       <br />
 
-      <table>
+      <table class="tabela-gjuha">
         <h3>Gjuhet</h3>
         <tr>
           <th>Gjuha</th>
@@ -119,7 +143,7 @@
       </table>
       <br />
       <h3>Aftesi programuese</h3>
-      <ul>
+      <ul class="list-programming">
         <li>HTML</li>
         <li>CSS</li>
         <li>C#</li>
@@ -128,7 +152,7 @@
       <br />
 
       <h3>Aftesi te buta</h3>
-      <ul>
+      <ul class="list-skills">
         <li>Bashkepunimi</li>
         <li>Kreativiteti</li>
         <li>Te menduarit kritik</li>
@@ -139,38 +163,36 @@
     <br />
 
     <section id="contact">
-      <h3>
+      <hr />
+      <div class="kontakti">
+      <h2>
         Kontakti
-        <hr />
-      </h3>
+    
+      </h2>
+    </div>
+    <hr />
+    <div class="contact">
       <form action="mailto:egzonbllaca88@gmail.com">
-        <fieldset>
-          <legend>Me kontaktoni</legend>
-          <label for="email-input">E-mail:</label>
-          <input
-            type="email"
-            id="email-input"
-            placeholder="email@example.com"
-          /><br />
-          <label for="message-input">Mesazhi juaj:</label>
-          <input type="text" id="message-input" /><br />
-          <label for="shteti">Shtetesia:</label>
-          <select name="" id="">
-            <option value="sh">Shqiperi</option>
-            <option value="ko">Kosove</option>
-            <option value="mk">Maqedoni</option>
-            <option value="tj">Tjeter</option></select
-          ><br />
-          <label for="">Gjinia:</label>
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Mashkull</label>
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Femer</label>
-          <br />
-          <br />
-          <input type="submit" value="Dergo" id="submit-input" />
-        </fieldset>
+          <div class="input-group">
+              <label for="name">Emri:</label>
+              <input type="text" name="" id="name">
+          </div>
+          <div class="input-group">
+              <label for="email">E-mail:</label>
+              <input type="text" name="" id="email">
+          </div>
+          <div class="input-group">
+              <label for="msg">Mesazhi:</label>
+              <textarea id="msg-input" name="" id="msg" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input-group">
+              <input type="submit" value="Send" id="submit-button">
+          </div>
       </form>
+  </div>
     </section>
+    <br><br>
+  </div>
+ 
   </body>
 </html>
