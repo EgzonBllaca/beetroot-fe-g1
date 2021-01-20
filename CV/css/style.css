@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color:#58a4b9;
+    color: rgb(255, 255, 255);
+    font-family: serif;
+}
+a {
+    text-decoration: underline;
+    color: #ffffff;
+
+}
+
+.container {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color:#0a4d61;
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;  
+    text-align:center;
+}
+
+.navigation-list{
+    margin: 40px;
+    color: rgb(255, 255, 255);
+}
+.navigation-list li {
+    
+    margin: 30px 20px;
+    display: inline;
+    padding: 10px ;
+    text-align:left;
+    border-radius: 4px;
+}
+.navigation-list li:hover{
+    background-color: #356f80;
+
+}
+.navigation-list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+
+
+
+}
+.personal-info img{
+    border-radius: 50%;
+}
+.info ,.education, .aftesite, .kontakti{
+    text-align:left;
+    margin-left: 10px;
+
+}
+.tabela-edukimi  {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.tabela-trajnimi{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.tabela-gjuha {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 5%;
+
+}
+table ,th ,td{
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+
+.list-programming li {
+    
+    margin: 30px 20px;
+    
+    display: inline;
+    padding: 10px ;
+    text-align:left;
+}
+.list-skills li {
+    
+    margin: 30px 20px;
+    
+    display: inline;
+    padding: 10px ;
+    text-align:left;
+}
+
+.input-group {
+    margin-bottom:30px;
+}
+.contact form {
+    width:300px;
+    display: block;
+    margin:  auto;
+    margin-top: 40px ;
+}
+#msg-input {
+    height:150px
+}
+.input-group input{
+    text-align: center;
+}
+.input-group input,
+.input-group textarea {
+
+    width:300px;
+    border:0;
+    height:30px;
+    border:1px solid #c5c5c5;
+    border-radius:5px;
+   
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    margin-bottom:15px;
+}
+.input-group input[type="submit"] {
+    background-color:#0a4d61;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:2px solid #ffffff;
+}
+#submit-button:hover{
+    background-color: #356f80;
+}
+
